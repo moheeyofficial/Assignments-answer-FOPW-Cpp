@@ -42,4 +42,5 @@ cout << sizeof (c) * sizeof(a) << "\n"; // 32
 cout << (int)c * a << "\n"; // 5000
 cout << char(sizeof(c) * int(c)) << "\n"; // P  = 80
 
+return 0;
 }

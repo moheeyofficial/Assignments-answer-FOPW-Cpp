@@ -17,7 +17,7 @@ int main()
     cout << fName + mName + lName << endl;
     cout << fName << mName << lName << endl;
     cout << fName.append(mName.append(lName)) << endl;
-    
+
     // Output Needed
     // Elzero Web School
     // Elzero Web School

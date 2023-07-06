@@ -1,4 +1,4 @@
-//  التكليف العاشر في الأسبوع السادس من كورس 
+//  التكليف العاشر في الأسبوع السادس من كورس
 // Fundamentals Of Programming With C++
 
 /*
@@ -39,26 +39,32 @@ using namespace std;
 int main()
 {
   array<int, 6> nums = {10, 20, 30, 40, 20, 50};
-   
+
   // Method 1
-    cout << nums.front()<<endl;
-    cout << nums.back()<<endl;
+  cout << nums.front() << endl;
+  cout << nums.back() << endl;
+  //   "First: 10"
+  //   "Last: 50"
+  cout << "===================\n";
+  //   // Method 2
+  cout << nums.at(0) << endl;
+  cout << nums[nums.size() - 1] << endl;
+  //   "First: 10"s
+  //   "Last: 50"
+  cout << "===================\n";
 
-//   "First: 10"
-//   "Last: 50"
+  //   // Method 3
+  cout << nums[sizeof(nums) / sizeof(int) - sizeof(nums) / sizeof(int)] << endl;
+  cout << nums[sizeof(nums) / sizeof(nums[0]) - 1] << endl;
+  //   "First: 10"
+  //   "Last: 50"
+  cout << "===================\n";
 
-//   // Method 2
-    cout << nums[nums.size ()-nums.size ()]<<endl;
-    cout << nums[nums.size ()-1]<<endl;
-
-//   "First: 10"s
-//   "Last: 50"
-
-//   // Method 3
-    cout << nums[sizeof(nums)/sizeof(nums[0]) -1 ]<<endl;
-    cout << nums[sizeof(nums)/sizeof(nums[0])- sizeof(nums)/sizeof(nums[0]) ]<<endl;
-//   "First: 10"
-//   "Last: 50"
+  //   // Method 5
+  cout << nums[0] << endl;
+  cout << nums[nums.end() - nums.begin() - 1] << endl;
+  //   "First: 10"
+  //   "Last: 50"
 
   return 0;
 }

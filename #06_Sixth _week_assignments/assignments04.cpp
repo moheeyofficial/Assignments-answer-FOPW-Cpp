@@ -1,4 +1,4 @@
-//  التكليف الرابع في الأسبوع السادس من كورس 
+//  التكليف الرابع في الأسبوع السادس من كورس
 // Fundamentals Of Programming With C++
 /*
     لديك Array فيها مجموعة من الأرقام
@@ -34,21 +34,21 @@ int vals[]{100, 200, 600, 400, 200};
 */
 
 #include <iostream>
-    using namespace std;
+using namespace std;
 
-int main ()
+int main()
 {
-int vals[]{100, 200, 250, 400, 200};
-    if (vals[0]+ vals[4]>vals[2])
+    int vals[]{100, 200, 250, 400, 200};
+    if (vals[0] + vals[4] > vals[2])
     {
         cout << "First Number + Last Number Is Larger Than Middle Number";
     }
-    else if (vals[1]+ vals[3]>vals[2])
+    else if (vals[1] + vals[3] > vals[2])
     {
         cout << "Second Number + Before Last Number Is Larger Than Middle Number";
     }
     else
-    cout << "Middle Number Is The Largest";
+        cout << "Middle Number Is The Largest";
 
     return 0;
 }

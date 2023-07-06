@@ -1,4 +1,4 @@
-//  التكليف الخامس في الأسبوع السادس من كورس 
+//  التكليف الخامس في الأسبوع السادس من كورس
 // Fundamentals Of Programming With C++
 
 /*
@@ -30,33 +30,35 @@ int vals[] = {100, 300, 600, 200, 100};
 */
 
 #include <iostream>
-    using namespace std;
+using namespace std;
 
-int main ()
+int main()
 {
     // Example 1
     int vals[] = {100, 200, 600, 200, 100};
-        cout << (vals[0]==vals[4] && vals[1]==vals[3] 
-        ? "Array Is Palindrome\n" :"Array Is Not Palindrome\n" );
+    cout << (vals[0] == vals[4] && vals[1] == vals[3]
+                 ? "Array Is Palindrome\n"
+                 : "Array Is Not Palindrome\n");
     // // Output
     // "Array Is Palindrome"
 
     // // Example 2
     int vals2[] = {100, 200, 200, 100};
-        cout << (vals2[0]==vals2[3] && vals2[1]==vals2[2] 
-        ? "Array Is Palindrome\n" :"Array Is Not Palindrome\n" );
+    cout << (vals2[0] == vals2[3] && vals2[1] == vals2[2]
+                 ? "Array Is Palindrome\n"
+                 : "Array Is Not Palindrome\n");
 
     // // Output
     // "Array Is Palindrome"
 
     // // Example 3
     int vals3[] = {100, 300, 600, 200, 100};
-        cout << (vals3[0]==vals3[4]  && vals3[1]==vals3[3]
-         ? "Array Is Palindrome\n" :"Array Is Not Palindrome\n" );
+    cout << (vals3[0] == vals3[4] && vals3[1] == vals3[3]
+                 ? "Array Is Palindrome\n"
+                 : "Array Is Not Palindrome\n");
 
     // // Output
     // "Array Is Not Palindrome"
-
 
     return 0;
 }
